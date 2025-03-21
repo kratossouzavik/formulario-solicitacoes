@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Transporte-SMA</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Solicitação de Transporte</h1>
+        <form id="solicitacaoForm" class="p-4 bg-white shadow rounded">
+
+            <div class="mb-3">
+                <label for="processo_sisgep" class="form-label">Processo SISGEP:</label>
+                <input type="number" id="processo_sisgep" name="processo_sisgep" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="data_solicitacao" class="form-label">Data de Solicitação:</label>
+                <input type="date" id="data_solicitacao" name="data_solicitacao" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="SELECIONE_CRAS">SELECIONE_CRAS:</label>
+      <select id="SELECIONE_CRAS" name="SELECIONE_CRAS" required>
+        <option value="">Selecione...</option>
+        <option value="CRAS-JAGUARI">CRAS-JAGUARI</option>
+        <option value="CRAS-NAS COLINAS">CRAS-NAS COLINAS</option>
+        <option value="CRAS-CASA DAS FAMILIA JD ISAURA">CRAS-CASA DAS FAMILIA JD ISAURA</option>
+        <option value="CRAS-CENTRO">CRAS-CENTRO</option>
+        <option value="CRAS-FAZENDINHA">CRAS-FAZENDINHA</option>
+        <option value="CRAS-SAO PEDRO">CRAS-SAO PEDRO</option>
+        <option value="CRAS- NAS CURURUQUARA">CRAS- NAS CURURUQUARA</option>
+        <option value="CRAS- NAS ITAPUA">CRAS- NAS ITAPUA</option>
+        <!-- Options omitted for brevity -->
+      </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="responsavel_solicitacao" class="form-label">Responsável pela Solicitação:</label>
+                <input type="text" id="responsavel_solicitacao" name="responsavel_solicitacao" class="form-control" required>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="motorista">MOTORISTA:</label>
+<select id="motorista" name="motorista" required>
+    <option value="">Selecione...</option>
+    <option value="41336_ANDRE MAURICIO FERREIRA DE ANDRADE">41336_ANDRE MAURICIO FERREIRA DE ANDRADE</option>
+    <option value="17778_PAULO BRUNO LINS">17778_PAULO BRUNO LINS</option>
+    <option value="43334_VLAUDEMIR QUEIROZ DOS SANTOS">43334_VLAUDEMIR QUEIROZ DOS SANTOS</option>
+    <option value="43061_ANTONIO BENEDICTO DIAS JUNIOR">43061_ANTONIO BENEDICTO DIAS JUNIOR</option>
+    <option value="25607_WILTON SILVA DA ROCHA">25607_WILTON SILVA DA ROCHA</option>
+    <option value="22631_WILTON CORREIA DA SILVA">22631_WILTON CORREIA DA SILVA</option>
+    <option value="41349_WESTER ALMEIDA PINHEIRO">41349_WESTER ALMEIDA PINHEIRO</option>
+    <option value="40324_ALAN FERREIRA DE CARVALHO">40324_ALAN FERREIRA DE CARVALHO</option>
+    <option value="39956_WENDEL GOMES DA COSTA">39956_WENDEL GOMES DA COSTA</option>
+    <option value="33561_DANILO LUIZ DA SILVEIRA E SOUZA">33561_DANILO LUIZ DA SILVEIRA E SOUZA</option>
+    <option value="17689_CARLOS ALBERTO CARDOSO DE OLIVEIRA">17689_CARLOS ALBERTO CARDOSO DE OLIVEIRA</option>
+    <option value="20064_JUVENIL MACIEL DA SILVA">20064_JUVENIL MACIEL DA SILVA</option>
+    <option value="43242_MARCELO LUIS SAMPAIO SORIANI">43242_MARCELO LUIS SAMPAIO SORIANI</option>
+    <option value="30122_MAURO ROSA SILVA">30122_MAURO ROSA SILVA</option>
+    <option value="43511_ALTAIR ANTONIO DE OLIVEIRA">43511_ALTAIR ANTONIO DE OLIVEIRA</option>
+    <option value="41380_DIEGO OLIVEIRA DA SILVA CEZARINO">41380_DIEGO OLIVEIRA DA SILVA CEZARINO</option>
+    <option value="3310_GILVALDO VIEIRA DE FRANCA">3310_GILVALDO VIEIRA DE FRANCA</option>
+    <option value="43614_GUILHERME PINHEIRO">43614_GUILHERME PINHEIRO</option>
+        <!-- Options omitted for brevity -->
+      </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="CARRO">MODELO/CARRO:</label>
+<select id="CARRO" name="CARRO" required>
+    <option value="">Selecione...</option>
+    <option value="HB20_SVX7G33">HB20_SVX7G33</option>
+    <option value="HB20_STE3A52">HB20_STE3A52</option>
+    <option value="HB20_SVI2G30">HB20_SVI2G30</option>
+    <option value="HB20_STL7B03">HB20_STL7B03</option>
+    <option value="HB20_SVF4G69">HB20_SVF4G69</option>
+    <option value="HB20_STQ2C25">HB20_STQ2C25</option>
+    <option value="HB20_FPL1C62">HB20_FPL1C62</option>
+    <option value="SPIN_STZ5H27">SPIN_STZ5H27</option>
+    <option value="SPIN_SSW2J41">SPIN_SSW2J41</option>
+    <option value="SPIN_SUK2H95">SPIN_SUK2H95</option>
+    <option value="SPIN_SVI4J37">SPIN_SVI4J37</option>
+    <option value="RODRIGO BEBE">RODRIGO BEBE</option>
+    <option value="MASTER_STD0H57_16_LUGARES">MASTER_STD0H57_16_LUGARES</option>
+    <option value="MASTER_SUF4G41_16_LUGARES">MASTER_SUF4G41_16_LUGARES</option>
+</select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="municipe" class="form-label">Munícipe Solicitante:</label>
+                <input type="text" id="municipe" name="municipe" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="acompanhante" class="form-label">NOME DO ACOMPAPNHANTE SE HOUVER:</label>
+                <input type="text" id="acompanhante" name="acompanhante" class="form-control" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="status" class="form-label">Status da Solicitação:</label>
+                <select id="status" name="status" class="form-select">
+                    <option value="PENDENTE">PENDENTE</option>
+                    <option value="APROVADO">APROVADO</option>
+                    <option value="REPROVADO">REPROVADO</option>
+                </select>
+
+            <div class="mb-3">
+                <label for="contato" class="form-label">Contato/Cel:</label>
+                <input type="text" id="contato" name="contato" class="form-control" required placeholder="11-00000-0000">
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="cep" class="form-label">CEP:</label>
+                    <input type="text" id="cep" name="cep" class="form-control" required onblur="buscarEndereco()">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="numero" class="form-label">Número:</label>
+                    <input type="number" id="numero" name="numero" class="form-control" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="tipo de tratamento" class="form-label">Tipo de Tratamento:</label>
+                        <input type="text" id="tipo de tratamento" name="tipo de tratamento" class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="pcd" class="form-label">PCD:</label>
+                        <select id="pcd" name="pcd" class="form-select">
+                            <option value="SIM">SIM</option>
+                            <option value="NAO">NAO</option>
+                        </select>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (opcional, caso precise de funcionalidades interativas) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script> <!-- Certifique-se que esse arquivo está no mesmo diretório -->
+</body>
+</html>
